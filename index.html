@@ -1,149 +1,126 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шпаргалка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
-        <title>Шпаргалка</title>
-        <link rel = "stylesheet" href = "style.css">
-        <img src=""/>
-        <a href="#struktures">Структура</a>
-        <a href="#codes">HTML</a>
-        <a href="#styls">CSS</a>
-        <a href="#disainer">Дизайн</a>
-        <a class="sp" href="#styls">связь</a>
+        <img src="" alt="Описание изображения" />
+        <nav>
+            <a href="#struktures">Структура</a>
+            <a href="#codes">HTML</a>
+            <a href="#styls">CSS</a>
+            <a href="#disainer">Дизайн</a>
+            <a class="sp" href="#styls">Связь</a>
+        </nav>
     </header>
     <main>
-        <h1 id ="struktures">Структура</h1>
-        <p>Тут указанны основные правила оформления тэгов и общая структура</p>
+        <h1 id="struktures">Структура</h1>
+        <p>Тут указаны основные правила оформления тегов и общая структура.</p>
         <ol>
-            <li>Абсолютно весь код должен находится между тэгами  <a>&lt html &gt ... &lt /html &gt</a></li>
-            <li>Основное тело сайта идет сразу после html  <a>&lt body &gt ... &lt /body &gt</a></li>
-            <li>Далее указывается тэг для указания того что написанно в вкладке браузера  <a>&lt title &gt ... &lt /title &gt</a></li>
-            <li>Основная структура кода:</li>
-            <ol>
-                <li>Голова или шапка сайта  <a>&lt header &gt ... &lt /header &gt</a></li>
-                <li>Основная часть  <a>&lt main &gt ... &lt /main &gt</a></li>
-                <li>Подвал  <a>&lt footer &gt ... &lt /footer &gt</a></li>
-            </ol>
-        <li class="sp">Практически все тэги имееют пару и текст находится между ними как и другие теги</li>
+            <li>Абсолютно весь код должен находиться между тегами <code>&lt;html&gt; ... &lt;/html&gt;</code></li>
+            <li>Основное тело сайта идет сразу после <code>&lt;html&gt;</code> <code>&lt;body&gt; ... &lt;/body&gt;</code></li>
+            <li>Далее указывается тег для указания того, что написано в вкладке браузера <code>&lt;title&gt; ... &lt;/title&gt;</code></li>
+            <li>Основная структура кода:
+                <ol>
+                    <li>Голова или шапка сайта <code>&lt;header&gt; ... &lt;/header&gt;</code></li>
+                    <li>Основная часть <code>&lt;main&gt; ... &lt;/main&gt;</code></li>
+                    <li>Подвал <code>&lt;footer&gt; ... &lt;/footer&gt;</code></li>
+                </ol>
+            </li>
+            <li>Практически все теги имеют пару, и текст находится между ними, как и другие теги.</li>
         </ol>
         <p>Пример оформления:</p>
         <pre>
-&lt html &gt
-    &lt body &gt
-        &lt title &gt Надпись на вкладке браузера &lt /title &gt
-        &lt header &gt
-            ...Код для шапки сайта...          
-        &lt /header &gt
-        &lt main &gt
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;title&gt;Надпись на вкладке браузера&lt;/title&gt;
+        &lt;header&gt;
+            ...Код для шапки сайта...
+        &lt;/header&gt;
+        &lt;main&gt;
             ...Код основной части...
-        &lt /main &gt
-        &lt footer &gt
+        &lt;/main&gt;
+        &lt;footer&gt;
             ...код для подвала сайта...
-        &lt footer &gt
-    &lt /body &gt
-&lt /html &gt
+        &lt;/footer&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
         </pre>
-        <p></p>
-        <h1 id ="codes">HTML</h1>
-        <p>Тут основные тэги и что они делают</p>
+        
+        <h1 id="codes">HTML</h1>
+        <p>Тут основные теги и что они делают.</p>
         <ol>
-            <li> <a>&lt h1 &gt...&lt h6 &gt</a> - Размер и оформление текста</li>
-            <li> <a>&lt p &gt</a> - перенести на следующую строку</li>
-            <li> <a>&lt a &gt</a> - добавить ссылку или иные интерактивные элементы(можно и в остальные тэги но этот не влияет на оформление)</li>
-            <li> <a>&lt img src ="ссылка на картинку"&gt</a> - Добавить картинку 
-                 <img src=""></li>
-            <li> <a>&lt input type = "text" &gt</a> - Поле куда можно что то написать: <input type = "text"> </li>
-                        <li>
-            <ol>
-                <li> <a>&lt table &gt</a> - создать табличку</li>
-                <li> <a>&lt tr &gt</a> - столбец таблицы</li>
-                <li> <a>&lt td &gt</a> - ячейка таблицы</li>
-                <table>
-                    <tr>
-                        <td>столбец 1 ячейка 1</td>
-                        <td>столбец 2 ячейка 2</td>
-                    </tr>
-                    <tr>
-                        <td>столбец 2 ячейка 1</td>
-                        <td>столбец 2 ячейка 2</td>
-                    </tr>
-                </table>
-                <pre>
-&lt table &gt
-    &lt tr &gt
-        &lt td &gt столбец 1 ячейка 1 &lt /td &gt
-        &lt td &gt столбец 2 ячейка 1 &lt /td &gt
-    &lt /tr &gt
-    &lt tr &gt
-        &lt td &gt столбец 2 ячейка 1 &lt /td &gt
-        &lt td &gt столбец 2 ячейка 2 &lt /td &gt
-    &lt /tr &gt
-&lt /table &gt
-                </pre>
-            </ol>
+            <li><code>&lt;h1&gt;...&lt;h6&gt;</code> - Размер и оформление текста</li>
+            <li><code>&lt;p&gt;</code> - Перенести на следующую строку</li>
+            <li><code>&lt;a&gt;</code> - Добавить ссылку или иные интерактивные элементы (можно и в остальные теги, но этот не влияет на оформление)</li>
+            <li><code>&lt;img src="ссылка на картинку"&gt;</code> - Добавить картинку <img src="" alt="Картинка" /></li>
+            <li><code>&lt;input type="text"&gt;</code> - Поле, куда можно что-то написать: <input type="text" /></li>
+            <li>
+                <ol>
+                    <li><code>&lt;table&gt;</code> - Создать таблицу</li>
+                    <li><code>&lt;tr&gt;</code> - Строка таблицы</li>
+                    <li><code>&lt;td&gt;</code> - Ячейка таблицы</li>
+                    <table>
+                        <tr>
+                            <td>Столбец 1, ячейка 1</td>
+                            <td>Столбец 2, ячейка 1</td>
+                        </tr>
+                        <tr>
+                            <td>Столбец 1, ячейка 2</td>
+                            <td>Столбец 2, ячейка 2</td>
+                        </tr>
+                    </table>
+                    <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Столбец 1, ячейка 1&lt;/td&gt;
+        &lt;td&gt;Столбец 2, ячейка 1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Столбец 1, ячейка 2&lt;/td&gt;
+        &lt;td&gt;Столбец 2, ячейка 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </pre>
+                </ol>
             </li>
         </ol>
-        <p>Какие есть доп значения для тэгов?</p>
-        <ol>
-            <li>что это за доп параметр? и где его писать <pre>
-&lt тэг <a>доп.параметр = ""</a> &gt
-                </pre></li>
-            <li><a>style = "..."</a> - Задать стили</li>
-            <li><a>href = "..."</a> - Задать ссылку</li>
-            <li><a>href="#hhh"</a> - ссылка внутри нашего сайта</li>
-            <li><a>id ="hhh"</a> - тут указываем куда нас отправит сайт по ссылке выше</li>
-            <li><a>pclass ="..."</a> - Уникальный селектор</li>
-            <li><a>src ="..."</a> - Используется в тэге img чтобы задать ссылку на картинку</li>
-        </ol>
-        <p></p>
-        <h1 id ="styls">CSS</h1>
+        
+        <h1 id="styls">CSS</h1>
         <p>Как оформлять стили?</p>
         <ol>
-            <li>Оформление стиля внтри html кода создается доп. параметром <a>style</a> = <pre>
-&lt тэг style="параметр: нужное значение; 
-параметр: нужное значение;" &gt         
-            </pre></li>
-            <li>Оформление в отдельном CSS файле "Селектор"</li>
+            <li>Оформление стиля внутри HTML-кода создается дополнительным параметром <code>style</code>: 
                 <pre>
-тэг {
-параметр:нужное значение;
-параметр:нужное значение; 
+&lt;тег style="параметр: нужное значение; параметр: нужное значение;"&gt;
+                </pre>
+            </li>
+            <li>Оформление в отдельном CSS-файле:
+                <pre>
+тег {
+    параметр: нужное значение;
+    параметр: нужное значение; 
 }
-            </pre>
+                </pre>
+            </li>
         </ol>
-    <p>Какие есть параметры и значения?</p>
-    <ol>
-        <li><a>color: rgb(255, 255, 255);</a> - цвет текста</li>
-        <li><a>background-color: rgb(255, 255, 255);</a> - цвет фона</li>
-        <li><a>border: 4px solid rgb(255, 255, 255);</a> - цвет обводки и ее толщина</li>
-        <li><a>text-align: center;</a> - расположение текста</li>
-        <li><a>font-size: 20px;</a> - размер текста</li>
-        <li><a>font-family: Arial;</a> - Шрифт текста</li>
-        <li><a>font-weight: bold;</a> - Стиль теста(жирный курсив и тд)</li>
-        <li><a>text-decoration: none;</a> - отключить стандартное оформление(например подчеркивание ссылок)</li>
-        <li><a>border-radius: 10px;</a> - скругление углов обводки</li>
-        <li><a>padding: 5px;</a> - внутренние отступы</li>
-        <li><a>margin:10px;</a> - внешние отступы</li>
-        <li></li>
-    </ol>
-    <p>Иерархия селекторов</p>
-    <ol>
-        <li><a>.тэг</a> - Уникальный селектор</li>
-        <li><a>тэг тэг</a> - Контекстный селектор</li>
-        <li><a>тэг</a> - Селектор</li>
-        <li><a>style = </a> - Задание стиля внутри кода</li>
-        <li><a>defaut</a> - Стандартные настройки</li>
-    </ol>
-    <p></p>
-    <h1 id ="disainer">Дизайн</h1>
-    <p>Несколько правил того как сделать красиво</p>
-    <ol>
-        <li>Используй не больше 5 цветов а лучше найди готовую палитру</li>
-        <li>Оформляй сайт в едином стиле</li>
-        <li>Не пиши много сплошного текста разбавляй его картинками или цветными элементами</li>
-        <li>Соблюжай структуру это очень важно</li>
-    </ol>
+        
+        <h1 id="disainer">Дизайн</h1>
+        <p>Несколько правил того, как сделать красиво:</p>
+        <ol>
+            <li>Используй не больше 5 цветов, а лучше найди готовую палитру.</li>
+            <li>Оформляй сайт в едином стиле.</li>
+            <li>Не пиши много сплошного текста, разбавляй его картинками или цветными элементами.</li>
+            <li>Соблюдай структуру — это очень важно.</li>
+        </ol>
     </main>
+    
     <footer>
-        <a>созданно в учебных целях 2024</a>
+        <p>Создано в учебных целях 2024</p>
     </footer>
+</body>
 </html>
+
